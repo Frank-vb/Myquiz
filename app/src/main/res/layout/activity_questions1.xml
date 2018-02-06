@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="insideInset">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textSize="64sp"
+            android:textColor="@android:color/holo_red_light"
+            android:textAlignment="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/questionNumberTextview"/>
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/cityview"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wat is het antwoord op de eerste vraag?"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/question"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/answerRadio">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Antwoord 1"
+        android:id="@+id/buttonA"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Antwoord 2"
+        android:id="@+id/buttonB"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Antwoord 3"
+        android:id="@+id/buttonC"/>
+
+    </RadioGroup>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="This is my answer"
+    android:layout_marginRight="12dp"
+    android:layout_marginLeft="12dp"
+    android:onClick="submitRadioAnswer"
+    android:background="@android:color/holo_blue_bright"
+    android:layout_marginBottom="12dp"/>
+
+  </LinearLayout>
+
+</ScrollView>
