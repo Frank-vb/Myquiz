@@ -18,6 +18,12 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
+ //App consists of questions with one correct answer (radiobuttons)
+ // and a question with multiple possible correct answers (checkbuttons).
+ //Any number of extra 'radiobutton-questions' can be added, by typing in the questions and answers
+    // within the questions and answers.xml file
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void startQuiz(View view){
-    //void for saving the users name and bringing user to the first layout with questions
+    //method for saving the users name and bringing user to the first layout with questions
 
         // Define value which follows the number of the question
         questionCounter = 0;
@@ -156,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Change the textView to show the right questionNumber
         TextView questionNumberTextView2 = findViewById(R.id.questionNumberTextview2);
-        String numberOfQuestion = "Question " + (numberOfRadioQuestions +1) ;
+        String numberOfQuestion = getString(R.string.questionNumber) +" " + (numberOfRadioQuestions +1) ;
         questionNumberTextView2.setText(numberOfQuestion);
 
         //create Checkbox & textview variables
@@ -185,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonC = findViewById(R.id.buttonC);
 
         //Fill the views with the questions/answers for the next question
-        String numberOfQuestion = "Question " + (questionCounter +1) ;
+        String numberOfQuestion = getString(R.string.questionNumber) +" " +(questionCounter +1) ;
 
         questionNumberTextview.setText(numberOfQuestion);
         questionsView.setText(getResources().getStringArray(R.array.Questions)[questionCounter]);

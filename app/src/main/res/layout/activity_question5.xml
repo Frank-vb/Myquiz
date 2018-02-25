@@ -7,13 +7,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Question 5"
+            android:text="@string/questionNumber"
             android:textSize="64sp"
             android:textColor="@android:color/holo_red_light"
             android:textAlignment="center"
@@ -70,7 +70,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This is my answer"
+            android:text="@string/answerbutton"
             android:layout_marginRight="12dp"
             android:layout_marginLeft="12dp"
             android:layout_marginBottom="12dp"

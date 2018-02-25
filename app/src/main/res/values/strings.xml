@@ -1,54 +1,16 @@
 <resources>
     <string name="app_name">Myquiz</string>
+    <string name="name">Enter your name</string>
+    <string name="quiztitle1">Quiz</string>
+    <string name="quiztitle2">of the</string>
+    <string name="quiztitle3">Netherlands</string>
+    <string name="startButton">Start the quiz..</string>
+    <string name="answerbutton">THIS IS MY ANSWER</string>
+    <string name="retryButton">TRY AGAIN</string>
+    <string name="resultsTitle">Results</string>
+    <string name="questionNumber">Question</string>
 
-    <string-array name="Questions">
-        <item>Which of the following is not a name for a region in The Netherlands?</item>
-        <item>Which number is The Netherlands on the list of largest agricultural exporters of the world?</item>
-        <item>What is the average length of the Dutch male?</item>
-        <item>What is the average number of bikes per person in The Netherlands?</item>
-        <item>Which of the following cheeses is not a Dutch cheese?</item>
-    </string-array>
-    
-    <string-array name="AnswerA">
-        <item>Holland</item>
-        <item>17</item>
-        <item>184 cm (6 ft .4")</item>
-        <item>0.4</item>
-        <item>Leerdammer</item>
-    </string-array>
-    
-    <string-array name="AnswerB">
-        <item>Limburg</item>
-        <item>2</item>
-        <item>190 cm (6 ft 2.8")</item>
-        <item>0.8</item>
-        <item>Gouda</item>
-    </string-array>
-    
-    <string-array name="AnswerC">
-        <item>Vlaanderen</item>
-        <item>49</item>
-        <item>183cm (6 ft)</item>
-        <item>1.3</item>
-        <item>Flandrien</item>
-    </string-array>
-    
-<string-array name="correctAnswer">
-    <item>"Vlaanderen"</item>
-    <item>"2"</item>
-    <item>184 cm (6 ft .4")</item>
-    <item>"1.3"</item>
-    <item>"Flandrien"</item>
-</string-array>
 
-    <bool name="checkBoxAnswerA">true</bool>
-    <bool name="checkBoxAnswerB">false</bool>
-    <bool name="checkBoxAnswerC">true</bool>
-    
- <string name="checkQuestion">"Which of the following statements is true"?</string>
- <string name="checkAnswer1">"55% of Netherlands' territory lays below sea level"</string>
- <string name="checkAnswer2">"The Netherlands is number 5 of the largest producers of milk (worldwide)"</string>
-    <string name="checkAnswer3">"77% of all flower bulbs traded worldwide come from the Netherlands"</string>
 
 
 </resources>
