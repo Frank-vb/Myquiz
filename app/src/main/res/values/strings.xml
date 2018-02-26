@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Myquiz</string>
     <string name="name">Enter your name</string>
+    <string name="anwserField">Enter your answer</string>
     <string name="quiztitle1">Quiz</string>
     <string name="quiztitle2">of the</string>
     <string name="quiztitle3">Netherlands</string>

@@ -50,5 +50,8 @@
     <string name="checkAnswer2">"The Netherlands is number 5 of the largest producers of milk (worldwide)"</string>
     <string name="checkAnswer3">"77% of all flower bulbs traded worldwide come from the Netherlands"</string>
 
+    <string name="edittextQuestion">What is the Capital of the Netherlands?</string>
+
+    <string name="edittextAnswer">amsterdam</string>
 
 </resources>

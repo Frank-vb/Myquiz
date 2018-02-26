@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         questionCounter = 0;
 
         // Retrieve name of player
-        TextView playerName = (TextView) findViewById(R.id.namePlayer);
+        EditText playerName = (EditText) findViewById(R.id.namePlayer);
         nameOfPlayer = playerName.getText().toString();
 
         // Switch layout to next screen with first questions
@@ -141,9 +142,36 @@ public class MainActivity extends AppCompatActivity {
             toastMessage.show();
         }
 
-       endResults();
+        checkNextQuestion();
 
     }
+
+    public void submitEdittext(View view){
+
+    TextView answerTextfield = findViewById(R.id.edittextAnswer);
+    String submittedAnswer = answerTextfield.getText().toString().toLowerCase();
+    String correctAnswer = getString(R.string.edittextAnswer);
+
+    if (submittedAnswer.equals(correctAnswer)){
+
+        score += 1;
+        toastMessage = Toast.makeText(MainActivity.this, "Good answer! Score: " + score, Toast.LENGTH_SHORT);
+        toastMessage.show();
+
+        }
+    else {
+
+        toastMessage = Toast.makeText(MainActivity.this, "False answer! " + score, Toast.LENGTH_SHORT);
+        toastMessage.show();
+        }
+
+        endResults();
+
+
+    }
+
+
+
 
     public void checkNextQuestion() {
     //void for checking the correct answer and determine the next step (new radioquestion or last (checkbox)question.
@@ -155,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
         if (questionCounter < (numberOfRadioQuestions)){
             radiobuttonQuestion();
         }
-        else
+        else if (questionCounter == numberOfRadioQuestions + 1)
         {
 
         setContentView(R.layout.activity_question5);
@@ -176,6 +204,12 @@ public class MainActivity extends AppCompatActivity {
         checkBoxA.setText(getResources().getString(R.string.checkAnswer1));
         checkBoxB.setText(getResources().getString(R.string.checkAnswer2));
         checkBoxC.setText(getResources().getString(R.string.checkAnswer3));
+
+        }
+
+        else {
+
+        setContentView(R.layout.activity_questions6);
 
         }
     }
